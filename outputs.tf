@@ -61,7 +61,7 @@ output "name" {
 output "primary_access_key" {
   description = "The primary access key for the Storage Account."
   sensitive   = true
-  value       = ephemeral.azapi_resource_action.storage_account_keys.output.keys[0].value
+  value       = azapi_resource_action.storage_account_keys.output.keys[0].value
 }
 
 output "private_endpoints" {
@@ -94,7 +94,7 @@ output "resource_id" {
 output "secondary_access_key" {
   description = "The secondary access key for the Storage Account."
   sensitive   = true
-  value       = ephemeral.azapi_resource_action.storage_account_keys.output.keys[1].value
+  value       = azapi_resource_action.storage_account_keys.output.keys[1].value
 }
 
 output "shares" {
